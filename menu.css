@@ -1,0 +1,161 @@
+.subir-operacion {
+  display: none;
+}
+.show1 {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  height: 400px;
+  width: 200px;
+  background-color: #1b1b52;
+  margin: 123px auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #38e;
+  text-align: center;
+}
+h5 {
+  margin: -15px;
+}
+.show1 select {
+  height: 20px;
+  font-size: 10px;
+}
+.show1 label {
+  margin-bottom: -10px;
+  font-size: 15px;
+}
+.show1 input {
+  height: 20px;
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn {
+  margin-top: -5px;
+  background: green;
+  border: #357ebd solid 0px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.subir-operaciones {
+  display: none;
+}
+.show2 {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  transform: translateX(210px);
+  height: 300px;
+  width: 200px;
+  background-color: #1b1b52;
+  margin: 123px auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #38e;
+  text-align: center;
+}
+.show2 input {
+  height: 25px;
+  width: 180px;
+}
+#enviar {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+}
+#consultar {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+}
+#customer {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#customer td,
+#customer th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customer tr {
+  background-color: #38e;
+  color: #000;
+  font-weight: bold;
+}
+
+#customer tr:hover {
+  background: linear-gradient(to top, transparent, #000);
+  color: #fff;
+}
+
+#customer th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.footer {
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+  width: 100px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .show1 {
+    width: 155px;
+    margin-top: 100px;
+    min-height: 300px;
+  }
+  .show1 input {
+    width: 140px;
+  }
+  .show2 {
+    transform: translateX(180px);
+    width: 140px;
+    margin-top: 100px;
+    height: 250px;
+  }
+  .show2 input {
+    width: 130px;
+    height: 20px;
+  }
+  #customer {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  #customer td,
+  #customer th {
+    border: 1px solid #ddd;
+    padding: 5px 2.5px;
+    left: 0;
+    text-align: center;
+  }
+  .footer {
+    font-size: 12px;
+    margin-left: -35px;
+  }
+}

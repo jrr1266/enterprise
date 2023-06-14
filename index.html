@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>📝Gestión de Cuentas</h1>
+    <header>
+      <button class="myButton1">➕</button>
+      <button class="myButton2">🔍</button>
+    </header>
+    <table id="customers">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Nombre</th>
+          <th>Tarjeta</th>
+          <th>Banco</th>
+          <th>Moneda</th>
+          <th>Monto</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table id="customer">
+      <thead>
+        <tr>
+          <th>Monto</th>
+          <th>Nombre</th>
+          <th>Tarjeta</th>
+          <th>Banco</th>
+          <th>Moneda</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="footer"></div>
+    <form method="post" id="form1" class="subir-operacion">
+      <h4>SUBIR OPERACION</h4>
+      <h5>TARJETA</h5>
+      <input id="tarjeta1" type="text" placeholder="numero de tarjeta" />
+      <label>NOMBRE</label>
+      <select id="nombre">
+        <option value="0"></option>
+        <option value="1">JOARIS</option>
+        <option value="2">JUAN</option>
+        <option value="3">ILIANA</option>
+      </select>
+      <input id="nombre2" type="text" />
+      <label>BANCO</label>
+      <select id="banco">
+        <option value=""></option>
+        <option value="1">METROPOLITANO</option>
+        <option value="2">BANDEC</option>
+        <option value="3">BPA</option>
+      </select>
+      <input id="banco2" type="text" />
+      <label>MONEDA</label>
+      <select id="moneda">
+        <option value=""></option>
+        <option value="1">CUP</option>
+        <option value="2">MLC</option>
+      </select>
+      <input id="moneda2" type="text" />
+      <label>MONTO</label>
+      <input id="monto" type="number" placeholder="ingrese la cantidad" />
+      <input class="btn" type="button" value="ENVIAR" />
+    </form>
+    <form method="get" id="form2" class="subir-operaciones">
+      <h4>SOLICITAR OPERACIONES</h4>
+      <label>TARJETA</label>
+      <input id="tarjeta2" type="text" placeholder="numero de tarjeta" />
+      <input id="consultar" type="button" value="ENVIAR" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  color: #eee;
+  background-color: #112;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr {
+  background-color: #38e;
+  color: #000;
+  font-weight: bold;
+}
+
+#customers tr:hover {
+  background: linear-gradient(to top, transparent, #000);
+  color: #fff;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.myButton1 {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+.myButton2 {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+  margin-left: 40px;
+}
+
+.Delete {
+  width: 20px;
+  text-align: center;
+}
+.btnDelete:hover {
+  background: linear-gradient(to bottom, #d10202 5%, #ed3434 100%);
+  background-color: #d10202;
+}
+#nombre2 {
+  display: none;
+}
+#banco2 {
+  display: none;
+}
+#moneda2 {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  #customers {
+    font-size: 10px;
+    width: 100%;
+  }
+  #customers td,
+  #customers th {
+    border: 1px solid #ddd;
+    padding: 5px 2.5px;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    width: 100%;
+    font-size: 25px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myButton1 {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  .myButton2 {
+    margin-bottom: 5px;
+    width: 120px;
+    height: 30px;
+    border: none;
+  }
+}
