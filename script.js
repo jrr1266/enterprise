@@ -24,7 +24,6 @@ myButton2.addEventListener("click", () => {
   abrirFormulario2();
 });
 consultar.addEventListener("click", () => {
-  footer.innerHTML = "";
   enviar();
 });
 nombre.addEventListener("change", () => {
@@ -148,7 +147,7 @@ function segundoCampo() {
   }
 }
 function tercerCampo() {
-  const valor3 = document.querySelector("#banco").value;
+  const valor3 = document.querySelector("#moneda").value;
   switch (valor3) {
     case "1":
       moneda2 = "CUP";
@@ -201,7 +200,7 @@ async function save() {
         },
       }
     );
-    window.location.reload();
+     window.location.reload();
   }
 }
 if (dia === 1) {
