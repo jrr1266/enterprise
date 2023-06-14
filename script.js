@@ -12,10 +12,8 @@ let nombre2 = document.getElementById("nombre2").value;
 let banco2 = document.getElementById("banco2").value;
 let moneda2 = document.getElementById("moneda2").value;
 let btn = document.querySelector(".btn");
-let footer = document.querySelector(".footer");
 let buleano1 = true;
 let buleano2 = true;
-let suma = [];
 function init() {
   search();
 }
@@ -26,6 +24,7 @@ myButton2.addEventListener("click", () => {
   abrirFormulario2();
 });
 consultar.addEventListener("click", () => {
+  footer.innerHTML = "";
   enviar();
 });
 nombre.addEventListener("change", () => {
@@ -103,8 +102,6 @@ async function enviar() {
     html = html + row;
   }
   document.querySelector("#customer > tbody").outerHTML = html;
-  suma.push(record.monto);
-  footer.innerHTML = `$${suma.reduce((red, num) => red + num)}`;
 }
 async function remove(id) {
   respuesta = confirm("¿Está seguro de eliminarlo?");
@@ -184,13 +181,13 @@ async function save() {
     monto: document.getElementById("monto").value,
   };
   if (
-    data.nombre === "" ||
+    data.nombre2 === "" ||
     data.tarjeta === "" ||
-    data.banco === "" ||
+    data.banco2 === "" ||
     data.monto === 0 ||
     data.monto === "" ||
     isNaN(data.monto) ||
-    data.moneda === ""
+    data.moneda2 === ""
   ) {
     alert("datos incorrectos");
   } else {

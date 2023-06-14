@@ -115,13 +115,6 @@ h5 {
   background-color: #04aa6d;
   color: white;
 }
-.footer {
-  font-family: sans-serif;
-  font-size: 25px;
-  text-align: center;
-  width: 100px;
-  margin-top: 5px;
-}
 
 @media screen and (max-width: 700px) {
   .show1 {
@@ -153,9 +146,5 @@ h5 {
     padding: 5px 2.5px;
     left: 0;
     text-align: center;
-  }
-  .footer {
-    font-size: 12px;
-    margin-left: -35px;
   }
 }
